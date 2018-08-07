@@ -19,5 +19,5 @@
 ```
 表达式：{Template OS Linux:system.localtime.fuzzytime(2)}=0
 
-其中“2”为本机时间与zabbix服务器时间的差值，单位是秒。 
+其中“2”为agent端时间与zabbix服务器时间的差值，单位是秒。 
 ````
