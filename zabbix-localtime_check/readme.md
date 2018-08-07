@@ -14,7 +14,7 @@
 >    Configuration -> Templates -> Template OS Linux -> Triggers -> Create trigger
 
     
-![Image text](http://gitlab.d.com.cn/ops/zabbix/raw/master/zabbix-localtime_check/time_triggers.png)
+![avatar](time_triggers.png)
     
     
 ```
