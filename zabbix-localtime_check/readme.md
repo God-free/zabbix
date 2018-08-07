@@ -8,9 +8,8 @@
 > 由于zabbix server的web页面上无法创建一个全新的只包含localtime触发器的模板，所以才需要手动在zabbix的os模板中创建触发器。
 
 
-
    
-## 在Zabbix Server 的 Dashboard页面创建触发器
+#### 在Zabbix Server 的 Dashboard页面创建触发器
 >    Configuration -> Templates -> Template OS Linux -> Triggers -> Create trigger
 
     
