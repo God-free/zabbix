@@ -26,21 +26,18 @@ password=xxxxxx
 #### 3.zabbix_agent配置
 `将mysql_slave.conf 移动到 /usr/local/zabbix/etc/zabbix_agent.conf.d/目录下`
 
-> #mysql_slave.conf内容注释
-
-> #获取mysql版本
-
-> UserParameter=mysql.version,mysql -V
-
-> #获取mysql性能指标,这个是上面定义好的脚本
-
-> UserParameter=mysql.status[*],/usr/local/zabbix/bin/check_mysql.sh $1
-
-> #获取mysql运行状态
-
-> UserParameter=mysql.ping,mysqladmin ping | grep -c alive
-
 `将check_mysql.sh移动到/usr/local/zabbix/bin/目录下`
+
+```
+ #mysql_slave.conf内容注释
+ #获取mysql版本
+ UserParameter=mysql.version,mysql -V
+ #获取mysql性能指标,这个是上面定义好的脚本
+ UserParameter=mysql.status[*],/usr/local/zabbix/bin/check_mysql.sh $1
+ #获取mysql运行状态
+ UserParameter=mysql.ping,mysqladmin ping | grep -c alive
+```
+
 ```
 #记得执行chown chmod命令修改权限
 chown zabbix.zabbix /usr/local/zabbix/bin/check_mysql.sh
